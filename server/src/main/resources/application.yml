@@ -1,6 +1,9 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5433/minspo-todos-review
+    url: jdbc:postgresql://localhost:5433/todos-original
     username: username
     password: password
+  jpa:
+    hibernate:
+      ddl-auto: update

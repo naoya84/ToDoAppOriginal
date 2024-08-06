@@ -1,12 +1,12 @@
-name: minspo-todo-review
+name: minspo-todos-original
 services:
   db:
     image: postgres:15
-    container_name: minspo-todo-review-postgres
+    container_name: minspo-todos-original-postgres
     ports:
       - 5433:5432
     environment:
       POSTGRES_USER: username
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: minspo-todos-review
+      POSTGRES_DB: todos-original
     command: postgres -c log_destination=stderr -c log_statement=all -c log_connections=on -c log_disconnections=on
